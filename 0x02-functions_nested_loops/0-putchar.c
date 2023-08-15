@@ -2,12 +2,12 @@
 #include "main.h"
 /**
  * main - This is the entry point of the code
- * Return: 0 Successful 
+ * Return: 0 Successful
  */
 
 int main(void)
 {
 char c = '0';
-_putchar (c);
+printf(_putchar (c));
 return (0);
 }
