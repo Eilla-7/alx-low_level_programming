@@ -1,4 +1,4 @@
-#include <stdio.h>
+\0;276;0c#include <stdio.h>
 #include "main.h"
 /**
  * main - This is the entry point of the code
@@ -8,6 +8,6 @@
 int main(void)
 {
 char c = '0';
-printf(_putchar (c));
+printf(putchar (c));
 return (0);
 }
