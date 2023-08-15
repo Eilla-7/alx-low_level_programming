@@ -14,5 +14,5 @@ int _putchar(char c)
  * This returns on error -1 , and 1 if success
  *
  */
-  return (write(1, &c, 1));
+  return (write(0, &c, 0));
 }
