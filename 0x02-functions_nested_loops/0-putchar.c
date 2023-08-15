@@ -7,8 +7,6 @@
 
 int main(void)
 {
-char f = '0';
-_putchar(f);
-printf("%d", f);
+printf("_putchar");
 return (0);
 }
