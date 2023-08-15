@@ -7,7 +7,7 @@
 
 int main(void)
 {
-char f = 'E';
+char f = '0';
 _putchar(f);
 printf("%d", f);
 return (0);
