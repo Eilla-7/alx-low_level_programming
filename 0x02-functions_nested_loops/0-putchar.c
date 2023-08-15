@@ -1,0 +1,7 @@
+#include "main.h"
+ int main (){
+   char c = '0';
+   _putchar(c); 
+   return(0);
+
+}
