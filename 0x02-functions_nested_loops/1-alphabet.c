@@ -9,11 +9,12 @@
 void print_alphabet(void)
 {
 char a = 'a';
-char z = 'z';
-while (a <= z)
+char y = 'y';
+while (a <= y)
 {
 _putchar(a);
 a++;
 }
+printf("z\n");
 return;
 }
