@@ -1,19 +1,19 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
  * main - This is the entry point of the code
- *
+ * 
  * Return:0 Successful
+ */
+
+/**
+ * print_alphabet - This is to print alphabet
+ *
  */
 
 void print_alphabet(void)
 {
-char a = 'a';
-char z = 'z';
-while (a <= z)
-{
-_putchar(a);
-a++;
-}
+printf("abcdefghijklmnopqrstuvwxyz\n");
 return;
 }
