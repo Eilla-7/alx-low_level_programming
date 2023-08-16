@@ -15,6 +15,6 @@ while (a <= y)
 _putchar(a);
 a++;
 }
-printf("z\n");
+_putchar("z\n");
 return;
 }
