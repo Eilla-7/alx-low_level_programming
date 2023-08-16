@@ -1,15 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
 #include "main.h"
 
 /**
  * main - This is the entry point of the code
- * 
- * Return:0 Successful
- */
-
-/**
- * print_alphabet - This is to print alphabet
  *
+ * Return:0 Successful
+ *
+ * print_alphabet - Prints alphabet
+ * Description: This function prints alphabet letters in lowercase 
  */
 
 void print_alphabet(void)
