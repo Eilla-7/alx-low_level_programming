@@ -20,5 +20,6 @@ printf("%d", i);
 }
 }
 }
+printf("\n");
 return;
 }
