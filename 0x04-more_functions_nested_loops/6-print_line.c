@@ -16,6 +16,5 @@ n--;
 }
 if (n <= 0)
 printf("\n");
-printf("\n");
 return;
 }
