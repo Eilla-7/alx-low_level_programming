@@ -9,14 +9,15 @@
 
 void print_line(int n)
 {
-if (n < 0)
+if (n > 0)
 {
-while (--n)
+while (n--)
 {
 printf("_");
 }
 }
 else
+printf("\n");
 printf("\n");
 return;
 }
