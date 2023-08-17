@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include "main.h"
 
 /**
@@ -10,6 +11,6 @@ void print_line(int n)
 {
 int m = '_';
 _putchar(n * m);
-_putchar('\n');
+printf("\n");
 return;
 }
