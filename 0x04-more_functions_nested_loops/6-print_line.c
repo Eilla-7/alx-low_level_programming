@@ -8,8 +8,8 @@
 
 void print_line(int n)
 {
-n = '_';
-_putchar(n);
+int m = '_';
+_putchar(n * m);
 _putchar('\n');
 return;
 }
