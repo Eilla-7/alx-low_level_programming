@@ -8,7 +8,8 @@
  * @parameter: int c isa letter to check about it
  * Return - 0 if lower and 1 if upper
  */
-
+int r;
+r = _islower('H');
 int _islower(int c)
 {
 if (islower(c))
