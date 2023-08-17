@@ -1,0 +1,15 @@
+#include<ctype.h>
+#include<stdio.h>
+#include "main.h"
+/**
+ * main - This is the entry point of the code
+ * Return - 0 Successful
+ */
+
+int _islower(int c)
+{
+if(islower(c))
+return(0);
+else
+return (1);
+}
