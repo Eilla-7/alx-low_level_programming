@@ -18,6 +18,7 @@ for (j = 0; j < 15; j++)
 printf("%d", j);
 }
 printf("\n");
+i++;
 }
 printf("\n");
 return;
