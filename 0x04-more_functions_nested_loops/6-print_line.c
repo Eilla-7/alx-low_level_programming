@@ -11,6 +11,6 @@ void print_line(int n)
 {
 n = '_';
 _putchar(n);
-printf("\n");
+_putchar('\n');
 return;
 }
