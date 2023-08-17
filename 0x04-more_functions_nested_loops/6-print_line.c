@@ -9,18 +9,12 @@
 
 void print_line(int n)
 {
-if (n > 0)
+while (n > 0)
 {
-while (--n)
-{
-printf("_");
+printf("_\n");
+n --;
 }
-}
-
-else if (n < 0)
-printf("\n");
-else if (n == 0)
-printf("\n");
+if (n <= 0)
 printf("\n");
 return;
 }
