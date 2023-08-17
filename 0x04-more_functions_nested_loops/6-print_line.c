@@ -9,8 +9,14 @@
 
 void print_line(int n)
 {
-int m = '_';
-_putchar(n * m);
+if (n < 0)
+{
+while (n--)
+{
+printf("_");
+}
+}
+else
 printf("\n");
 return;
 }
