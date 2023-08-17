@@ -14,17 +14,17 @@ int print_sign(int n)
 {
 if (n < 0)
 {
-printf("-1");
-return (1);
+return (-1);
+printf("\n");
 }
 else if (n == 0)
 {
-printf("0");
 return (0);
+printf("\n");
 }
 else
 {
-printf("+1");
-return(-1);
+return(+1);
+printf("\n");
 }
 }
