@@ -20,6 +20,5 @@ printf("%d", j);
 printf("\n");
 i++;
 }
-printf("\n");
 return;
 }
