@@ -1,4 +1,4 @@
-3.021#include<stdio.h>
+#include<stdio.h>
 #include "main.h"
 
 /**
