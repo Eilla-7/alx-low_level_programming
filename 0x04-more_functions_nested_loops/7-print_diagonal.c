@@ -15,10 +15,11 @@ while (n > 0)
 int i = j;
 while (i > 0)
 {
-_putchar(' ');
+printf(" ");
 i--;
 }
-printf("\\ \n");
+printf("\\");
+printf("\n");
 j++;
 n--;
 }
