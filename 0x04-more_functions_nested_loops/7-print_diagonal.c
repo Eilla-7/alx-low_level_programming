@@ -11,6 +11,7 @@ void print_diagonal(int n)
 {
 int i;
 int j;
+ if(n > 0){
 for (i = n; i >= 1; i--)
 {
 for (j = n - 1; j >= i; j--)
@@ -19,7 +20,8 @@ printf(" ");
 }
 printf("'\' \n");
 }
-if (n <= 0)
+ }
+else if (n <= 0)
 printf("\n");
 return;
 }
