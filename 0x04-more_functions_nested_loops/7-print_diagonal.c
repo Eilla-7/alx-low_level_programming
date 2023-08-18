@@ -23,7 +23,7 @@ printf("\n");
 j++;
 n--;
 }
-if (n <= 0)
+if (j < 1)
 printf("\n");
 return;
 }
