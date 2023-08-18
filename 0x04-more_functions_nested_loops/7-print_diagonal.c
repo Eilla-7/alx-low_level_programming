@@ -26,6 +26,5 @@ else if (n == 0)
 printf("\n");
 else if (n < 0)
 printf("\n");
-printf("\n");
 return;
 }
