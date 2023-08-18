@@ -13,7 +13,7 @@ if (size > 0)
 {
 int i;
 int j;
-for (i = 1; i<= size; i++)
+for (i = 1; i <= size; i++)
 {
 for (j = 1; j <= size; j++)
 {
