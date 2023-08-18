@@ -1,5 +1,9 @@
 #include<stdio.h>
-
+/**
+ * main - is the body of the program
+ * Return: 0 if success
+ * @void: has no parameter
+ */
 int main(void)
 {
 int i = 1;
@@ -16,5 +20,6 @@ printf("%d", i);
 printf(" ");
 i++;
 }
+printf("\n");
 return (0);
 }
