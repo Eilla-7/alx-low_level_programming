@@ -9,10 +9,15 @@
 
 void print_diagonal(int n)
 {
-while (n > 0)
+int i;
+int j;
+for (i = n; i >= 1; i--)
 {
+for (j = n - 1; j >= i; j--)
+{
+printf(" ");
+}
 printf("'\' \n");
-n--;
 }
 if (n <= 0)
 printf("\n");
