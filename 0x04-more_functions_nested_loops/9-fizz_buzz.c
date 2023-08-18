@@ -1,15 +1,9 @@
 #include<stdio.h>
-#include "main.h"
-/**
- * fizzBuzz - function that prints numbers and two words
- * Return: has no return value
- * @void: has no parameter
- */
 
-void fizzBuzz(void)
+int main(void)
 {
-int i;
-for (i = 1; i <= 100; i++)
+int i = 1;
+while (i <= 100)
 {
 if (i % 3 == 0 && i % 5 == 0)
 printf("FizzBuzz ");
@@ -20,6 +14,7 @@ printf("Fizz ");
 else
 printf("%d", i);
 printf(" ");
+i++;
 }
-return;
+return (0);
 }
