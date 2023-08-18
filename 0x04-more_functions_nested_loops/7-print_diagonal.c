@@ -13,9 +13,9 @@ int i;
 int j;
 if (n > 0)
 {
-for (i = n; i >= 1; i--)
+for (i = 0; i < n; i++)
 {
-for (j = n - 1; j >= i; j--)
+for (j = 0; j <= i; j++)
 {
 printf(" ");
 }
