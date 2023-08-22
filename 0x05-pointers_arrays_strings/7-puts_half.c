@@ -21,7 +21,7 @@ if (l % 2 == 0)
 i = l / 2;
 else
 i = (l - 1) / 2;
-for (j = i; j < l; j++)
+for (j = i; j < l; ++j)
 {
 printf("%c", str[j]);
 }
