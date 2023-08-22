@@ -8,12 +8,6 @@
  */
 void _puts(char *str)
 {
-int size;
-printf("%c", *str);
-for (size = -0; *str++; size++)
-{
-printf("%c", *str);
-}
-printf("\n");
+printf("%s\n", str);
 return;
 }
