@@ -9,7 +9,8 @@
 void _puts(char *str)
 {
 int size;
-for (size = 0; *str++; size++)
+printf("%c", *str);
+for (size = -0; *str++; size++)
 {
 printf("%c", *str);
 }
