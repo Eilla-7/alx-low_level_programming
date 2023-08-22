@@ -2,15 +2,17 @@
 #include<stdio.h>
 
 /**
- *
+ * _puts - print
+ * Return: no
+ * @str: the string
  */
 void _puts(char *str)
 {
-  int size;
+int size;
 for (size = 0; *str++; size++)
-  {
-  printf("%c", *str);
-  }
- printf("\n");
-  return;
+{
+printf("%c", *str);
+}
+printf("\n");
+return;
 }
