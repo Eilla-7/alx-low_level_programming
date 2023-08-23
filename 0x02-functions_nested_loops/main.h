@@ -6,6 +6,7 @@
  * print_alphabet - Prints alphabet
  */
 
+int _abs(int);
 
 int _putchar(char);
 
