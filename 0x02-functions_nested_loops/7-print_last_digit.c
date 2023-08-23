@@ -13,6 +13,5 @@ int j;
 if (i < 0)
 i *= -1;
 j = i % 10;
-printf("%d", j);
 return (j);
 }
