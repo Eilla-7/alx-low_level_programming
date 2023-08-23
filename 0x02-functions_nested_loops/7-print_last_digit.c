@@ -14,4 +14,5 @@ if (i < 0)
 i *= -1;
 j = i % 10;
 return (j);
+printf("%d", j);
 }
