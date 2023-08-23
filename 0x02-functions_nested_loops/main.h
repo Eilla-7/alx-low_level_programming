@@ -6,7 +6,7 @@
  * print_alphabet - Prints alphabet
  */
 
-int print_last_digit(int);
+int print_last_digit(int i);
 
 int _abs(int);
 
