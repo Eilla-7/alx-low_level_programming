@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include "main.h"
+
+/**
+ * reverse_array - to revers the arrangement of an array's elements
+ * @a: the array we want to revers
+ * @n: number of the array's elements
+ * Return: hes no return value
+ */
+
+void reverse_array(int *a, int n)
+{
+int i;
+for (i = n - 1; i >= 0; i--)
+{
+if (i == 0)
+printf("%d", a[i]);
+else
+{
+printf("%d, ", a[i]);
+}
+}
+return;
+}
