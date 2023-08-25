@@ -6,6 +6,7 @@
  * @src: the string we want to code
  * Return: the string after coding
  */
+
 char *leet(char *src)
 {
 int i = 0;
