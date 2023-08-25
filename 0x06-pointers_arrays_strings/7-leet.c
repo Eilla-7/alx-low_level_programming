@@ -9,20 +9,18 @@
 
 char *leet(char *src)
 {
-int i = 0;
-while (src[i] != '\0')
+int i, j;
+char s1[] = "aAeEoOtTlL";
+char s2[] = "4433007711";
+for (i = 0; src[i] != '\0'; i++)
 {
-if (src[i] == 'a' || src[i] == 'A')
-src[i] = '4';
-else if (src[i] == 'e' || src[i] == 'E')
-src[i] = '3';
-else if (src[i] == 'o' || src[i] == 'O')
-src[i] = '0';
-else if (src[i] == 't' || src[i] == 'T')
-src[i] = '7';
-else if (src[i] == 'l' || src[i] == 'L')
-src[i] = '1';
-i++;
+for (j = 0; j < 10; j++)
+{
+if (src[i] == s1[j])
+{
+src[i] = s2[j];
+}
+}
 }
 return (src);
 }
