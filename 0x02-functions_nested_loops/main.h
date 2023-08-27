@@ -6,6 +6,8 @@
  * print_alphabet - Prints alphabet
  */
 
+
+
 void jack_bauer(void);
 
 int print_last_digit(int i);
@@ -23,3 +25,5 @@ int _islower(int c);
 int _isalpha(int c);
 
 int print_sign(int n);
+
+void times_table(void);
