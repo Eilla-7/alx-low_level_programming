@@ -6,6 +6,8 @@
  * print_alphabet - Prints alphabet
  */
 
+void jack_bauer(void);
+
 int print_last_digit(int i);
 
 int _abs(int);
