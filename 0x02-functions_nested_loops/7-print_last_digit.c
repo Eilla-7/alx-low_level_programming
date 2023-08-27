@@ -3,13 +3,16 @@
 
 /**
  * print_last_digit - print the last digit
- * @i: the number
+ * @n: the number
  * Return: the last digit
  */
 
-int print_last_digit(int i)
+int print_last_digit(int n)
 {
-if (i < 0)
-i *= -1;
-return (i % 10);
+int last;
+last = n % 10;
+if (last < 0)
+last = last * -1;
+_putchar(last + '0');
+return (last);
 }
