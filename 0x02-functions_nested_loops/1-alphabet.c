@@ -7,7 +7,7 @@
  * Return:0 Successful
  *
  * print_alphabet - Prints alphabet
- * Description: 'This function prints alphabet letters in lowercase'
+ * Return: none
  */
 
 void print_alphabet(void)
