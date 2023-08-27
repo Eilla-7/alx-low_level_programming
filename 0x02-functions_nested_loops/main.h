@@ -6,7 +6,7 @@
  * print_alphabet - Prints alphabet
  */
 
-
+int add(int, int);
 
 void jack_bauer(void);
 
