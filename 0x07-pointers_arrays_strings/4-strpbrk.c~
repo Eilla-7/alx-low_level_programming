@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include "main.h"
+/**
+ * _strpbrk - returns the characters that semilar in the accept string
+ * @s: the first string
+ * @accept: the second string
+ * Return: the string has similar characters
+ */
+char *_strpbrk(char *s, char *accept)
+{
+
+
+  while (*s != '\0')
+    {
+      if (*s == *accept)
+	return (s);
+      s++;
+    }
+  if (*accept == '\0')
+  return (s);
+return (NULL);
+}
+/**
+      for (j = 0; accept[j]; j++)
+	{
+	   if (*s == accept[j])
+	     {
+	       *s = accept[j];
+	     }
+	   else if (accept[j +1] == '\0')
+	     return (s);
+	}
+      i++;
+    }
+      return (s);
+    }
+*/
