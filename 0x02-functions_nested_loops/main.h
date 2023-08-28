@@ -6,6 +6,8 @@
  * print_alphabet - Prints alphabet
  */
 
+void print_times_table(int n);
+
 int add(int, int);
 
 void jack_bauer(void);
