@@ -21,5 +21,5 @@ point2++;
 if (*point2 == '\0')
 return (haystack);
 }
-return (haystack);
+return (0);
 }
