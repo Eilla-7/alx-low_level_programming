@@ -8,13 +8,18 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-while (*haystack != '\0')
+for (; *haystack != '\0'; haystack++)
 {
-if (*haystack == *needle)
-return (haystack);
-haystack++;
+char *point1 = haystack;
+char *point2 = needle;
+
+while (*point1 == *point2 && *point2 != '\0')
+{
+point1++;
+point2++;
 }
-if (*needle == '\0')
+if (*point2 == '\0')
 return (haystack);
-return (NULL);
+}
+return (haystack);
 }
