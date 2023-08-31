@@ -1,3 +1,4 @@
+int wildcmp(char *s1, char *s2);
 int check_pal(char *s, int i, int len);
 int is_palindrome(char *s);
 int _sqrt_recursion(int n);
