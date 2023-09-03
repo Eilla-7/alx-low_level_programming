@@ -8,13 +8,14 @@
  */
 int main(int argc, char *argv[])
 {
-int num, i, mul = 1;
-if (argc > 1)
+int i, mul = 1, num1, num2;
+if (argc > 1 && argc < 3)
 {
+num1 = atoi(argv[1]);
+num2 = atoi(argv[2]);
 for (i = 1; i < argc; i++)
 {
-num = atoi(argv[i]);
-mul *= num;
+mul = num1 * num2;
 }
 printf("%d\n", mul);
 return (0);
