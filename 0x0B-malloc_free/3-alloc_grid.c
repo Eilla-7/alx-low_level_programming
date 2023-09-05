@@ -15,18 +15,18 @@ int i, j, mall;
 int **a;
 
 /*allocate for the width dimentional*/
-a = malloc(sizeof(int *) * height);
+a = malloc(sizeof(int *) * width);
 
 
 /*allocate for the height dimentional*/
-for (mall = 0; mall < width; mall++)
+for (mall = 0; mall < height; mall++)
 {
 a[mall] = malloc(sizeof(int) * width);
 }
 
- if (width == 0)
+ if (width <= 0)
    return (NULL);
- if (height == 0)
+ if (height <= 0)
    return (NULL);
 
 if (a == NULL)
