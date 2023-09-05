@@ -25,6 +25,6 @@ s[i] = str[j];
 i++;
 j++;
 }
+s[i] = '\0';
 return (s);
-free(s);
 }
