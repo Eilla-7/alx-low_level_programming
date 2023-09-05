@@ -52,4 +52,10 @@ a[i][j] = 0;
 }
 }
 return (a);
+
+ for (fr = mall; fr >= 0; fr--)
+   {
+     free(a[mall]);
+	  }
+       free(a);
 }
