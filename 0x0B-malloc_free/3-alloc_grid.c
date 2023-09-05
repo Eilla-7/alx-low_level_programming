@@ -14,8 +14,11 @@ int **alloc_grid(int width, int height)
 int i, j, mall, fr;
 int **a;
 
+ if (width <= 0 || height <= 0)
+   return (NULL);
+
 /*allocate for the width dimentional*/
-a = malloc(sizeof(int *) * width);
+a = malloc(sizeof(int *) * height);
 
 if (a == NULL)
 {
@@ -38,11 +41,6 @@ return (NULL);
 }
 }
 
-if (width <= 0)
-return (NULL);
-if (height <= 0)
-return (NULL);
-
 
 for (i = 0; i < height; i++)
 {
@@ -52,10 +50,4 @@ a[i][j] = 0;
 }
 }
 return (a);
-
- for (fr = mall; fr >= 0; fr--)
-   {
-     free(a[mall]);
-	  }
-       free(a);
 }
