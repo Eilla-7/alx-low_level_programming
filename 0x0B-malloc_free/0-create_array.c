@@ -1,0 +1,31 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include "main.h"
+
+/**
+ * create_array - a function that creat an array of chars
+ * @size: the size of the memory to locate that array
+ * @c: the charecter that entered in the array
+ * Return: the pointer to the array
+ */
+char *create_array(unsigned int size, char c)
+{
+
+unsigned int i;
+char *s;
+s = malloc(sizeof(char) * size);
+
+/*this test the fail of the program*/
+if (s == NULL)
+return (NULL);
+
+if (size == 0)
+return (NULL);
+
+/* this make the pointer point to the chars that has been enterd as an array*/
+for (i = 0; i < size; i++)
+{
+s[i] = c;
+}
+return (s);
+}
