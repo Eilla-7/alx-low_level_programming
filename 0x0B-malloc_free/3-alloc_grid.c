@@ -32,6 +32,7 @@ for (fr = 0; fr < mall; fr++)
 {
 free(a[fr]);
 }
+free(a);
 return (NULL);
 }
 }
