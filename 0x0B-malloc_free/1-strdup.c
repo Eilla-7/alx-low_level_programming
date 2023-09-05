@@ -19,6 +19,9 @@ for (len = 0; str[len] != '\0'; len++)
 ;
 s = malloc(sizeof(char) * len + 1);
 
+if (s == NULL)
+return (NULL);
+
 while (i < len)
 {
 s[i] = str[j];
@@ -28,5 +31,4 @@ j++;
 s[i] = '\0';
 return (s);
 free(s);
-free(str);
 }
