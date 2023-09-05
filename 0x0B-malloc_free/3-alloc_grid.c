@@ -11,7 +11,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-int i, j, mall, fr;
+int i, j, mall;
 int **a;
 
 /*allocate for the width dimentional*/
@@ -39,13 +39,4 @@ a[i][j] = 0;
 }
 }
 return (a);
-
-/* Free the height dimentional*/
-for (fr = 0; fr < width; fr++)
-{
-free(a[fr]);
-}
-
-/*free the width dimentional*/
-free(a);
 }
