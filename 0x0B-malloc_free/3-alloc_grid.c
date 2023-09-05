@@ -30,7 +30,7 @@ if (a[mall] == NULL)
 {
 for (fr = 0; fr < mall; fr++)
 {
-free(a[mall]);
+free(a[fr]);
 }
 return (NULL);
 }
