@@ -43,9 +43,6 @@ return (NULL);
 if (height <= 0)
 return (NULL);
 
-if (a == NULL)
-return (NULL);
-
 
 for (i = 0; i < height; i++)
 {
