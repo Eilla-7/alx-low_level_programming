@@ -21,7 +21,7 @@ a = malloc(sizeof(int *) * width);
 /*allocate for the height dimentional*/
 for (mall = 0; mall < width; mall++)
 {
-a[mall] = malloc(sizeof(int) * height);
+a[mall] = malloc(sizeof(int) * width);
 }
 
 if (width == 0 || height == 0)
