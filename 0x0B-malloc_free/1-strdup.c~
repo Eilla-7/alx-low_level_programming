@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include "main.h"
+/**
+ *
+ */
+char *_strdup(char *str)
+{
+  unsigned int i = 0, j = 0, len;
+  char *s;
+  for (len = 0; str[len] != '\0'; len++)
+    ;
+  s = malloc(sizeof(char) * len);
+  
+  while (i < len)
+    {
+      s[i] = str[j];
+      i++;
+      j++;
+    }
+  return (s);
+}
