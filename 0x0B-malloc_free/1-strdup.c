@@ -28,4 +28,5 @@ j++;
 s[i] = '\0';
 return (s);
 free(s);
+free(str);
 }
