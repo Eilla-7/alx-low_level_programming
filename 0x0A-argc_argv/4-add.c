@@ -26,7 +26,7 @@ f = 0;
 }
 i++;
 }
-if ( f == 0)
+if (f == 0)
 return (0);
 return (n);
 }
@@ -75,22 +75,22 @@ return (1);
  */
 int main(int argc, char *argv[])
 {
-  int j = 1, sum = 0, num;
-  while (j < argc)
-    {
-      if (_check(argv[j]))
-	{
-	  num = _atoi(argv[j]);
-	  sum += num;
-	 
-	}
-      else
-	{
-	printf("Error\n");
-	return (1);
-	}
-      j++;
-    }
-  printf("%d\n", sum);
-  return (0);
- }
+int j = 1, sum = 0, num;
+
+while (j < argc)
+{
+if (_check(argv[j]))
+{
+num = _atoi(argv[j]);
+sum += num;
+}
+else
+{
+printf("Error\n");
+return (1);
+}
+j++;
+}
+printf("%d\n", sum);
+return (0);
+}
