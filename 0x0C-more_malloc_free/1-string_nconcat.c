@@ -21,7 +21,7 @@ for (len_1 = 0; s1[len_1] != '\0'; len_1++)
 ;
 for (len_2 = 0; s2[len_2] != '\0'; len_2++)
 ;
-s = malloc(len_1 + n);
+s = malloc(len_1 + n + 1);
 if (s == NULL)
 return (NULL);
 for (; s1[i] != '\0'; i++)
