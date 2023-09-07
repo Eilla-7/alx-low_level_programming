@@ -31,7 +31,7 @@ if (i < len_1)
 s[i] = s1[i];
 if (i >= len_1)
 {
-if (j < n - 1)
+if (j < n)
 {
 s[i] = s2[j];
 j++;
