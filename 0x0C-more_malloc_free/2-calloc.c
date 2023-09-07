@@ -12,11 +12,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 char *array;
 unsigned int i;
 
-array = malloc(sizeof(int) * nmemb);
-
-if (array == 0)
-return (NULL);
 if (size == 0 || nmemb == 0)
+return (NULL);
+array = malloc(size * nmemb);
+
+if (array == NULL)
 return (NULL);
 
 for (i = 0; i < nmemb; i++)
