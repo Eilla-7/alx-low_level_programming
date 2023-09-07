@@ -25,24 +25,15 @@ size = len_1 + n + 1;
 s = malloc(size);
 if (s == NULL)
 return (NULL);
-while (i < size)
+for (; s1[i] != '\0'; i++)
 {
-if (i < len_1)
 s[i] = s1[i];
-if (i >= len_1)
-{
-if (j < n)
-{
-s[i] = s2[j];
-j++;
 }
-else
+for (; j < n; j++)
 {
 s[i] = s2[j];
-j++;
-}
-}
 i++;
 }
+s[i] = '\0';
 return (s);
 }
