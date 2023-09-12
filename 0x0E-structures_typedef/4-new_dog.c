@@ -27,6 +27,7 @@ return (dest);
  * @name: name of the dog
  * @age: age of the dog
  * @owner: the owner of the dog
+ * Return: the struct dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -40,7 +41,7 @@ for (len_2 = 0; owner[len_2] != '\0'; len_2++)
 dog = malloc(sizeof(dog_t));
 if (dog == NULL)
 return (NULL);
- 
+
 dog->name = malloc(sizeof(char) * (len_1 + 1));
 if (dog->name == NULL)
 {
