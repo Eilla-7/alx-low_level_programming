@@ -19,8 +19,8 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] < '0' || b[i] > '1')
 			return (0);
 
-		decimal = 2 * decimal + (b[i] + '0');
-		/**
+		decimal = 2 * decimal + (b[i] - '0');
+		/**i
 		 * b = 1001;
 		*decimal = 0;
 		*decimal = 2 * 0 + 1;
