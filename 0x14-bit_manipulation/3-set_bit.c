@@ -4,7 +4,7 @@
  * a given index.
  * @n: pint to the number to change
  * @index: index of the bit to set
- * Return: 0 in success
+ * Return: 1 in success
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
@@ -12,5 +12,5 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 
 	*n = *n | (1 << index);
-	return (0);
+	return (1);
 }
