@@ -6,6 +6,12 @@
 int get_endianness(void)
 {
 	unsigned long int n = 1;
+	char *byte = (char *)&n;
 
-	return (*(char *)&n);
+	if (*byte == 1)
+		return (1);
+	else
+		return (0);
+
+	/*return (*(char *)&n);*/
 }
