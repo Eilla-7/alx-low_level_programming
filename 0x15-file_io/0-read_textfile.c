@@ -6,8 +6,9 @@
  * the POSIX standard output
  * @filename: the file name
  * @letters:  the number of letters it should read and print
- * Return: if Success, returns the actual number of letters it could read and print, returns 0 if the file can
- * not be opened or read or the filename is NULL or if 
+ * Return: if Success, returns the actual number of letters it could read and
+ * print, returns 0 if the file can
+ * not be opened or read or the filename is NULL or if
  * fails or does not write the expected amount of bytes.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -17,16 +18,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t _read;
 	ssize_t _write;
 
-	 _open = open(filename, O_RDONLY);
-	 if (_open == -1)
-		 return (0);
+	_open = open(filename, O_RDONLY);
 
-	 buffer = malloc(sizeof(char) * letters);
+	if (_open == -1)
+		return (0);
 
-	 _read = read(_open, buffer, letters);
-	 _write = write(STDOUT_FILENO, buffer, _read);
+	buffer = malloc(sizeof(char) * letters);
 
-	 close(_open);
+	_read = read(_open, buffer, letters);
+	_write = write(STDOUT_FILENO, buffer, _read);
 
-	 return (_write);
+	close(_open);
+
+	return (_write);
 }
