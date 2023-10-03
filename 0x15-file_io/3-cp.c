@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- *
+ * Close - a function to close a file
+ * @fd: the file discriptor
  */
 
 void Close(int fd)
@@ -13,28 +14,30 @@ void Close(int fd)
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-                exit(100);
+		exit(100);
 	}
 }
 
 
 /**
- *
+ * buffering - function to create a buffer
+ * @fd: the content of the buffer
+ * Return: the buffer
  */
 
 char *buffering(char *fd)
 {
 	char *buffer;
 
-	 buffer = malloc(sizeof(char) * 1024);
+	buffer = malloc(sizeof(char) * 1024);
 
-	 if (buffer == NULL)
-        {
-                dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fd);
-                exit(99);
-        }
+	if (buffer == NULL)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fd);
+		exit(99);
+	}
 
-	 return (buffer);
+	return (buffer);
 }
 
 
