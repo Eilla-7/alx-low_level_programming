@@ -2,7 +2,11 @@
 
 
 /**
+ * make_node - a function to make a node
+ * @key: the key
+ * @value: the value associated with the key
  *
+ * Return: pointer to the new node
  */
 hash_node_t *make_node(const char *key, const char *value)
 {
@@ -32,7 +36,12 @@ hash_node_t *make_node(const char *key, const char *value)
 
 
 /**
+ * hash_table_set - a function that adds an element to hash table
+ * @ht: the hash table
+ * @key: the key
+ * @value: the value associated with the key
  *
+ * Return: 1 if successed, 0 in failure
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -44,7 +53,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht == NULL || ht->array == NULL || ht->size == 0 ||
 		key == NULL || strlen(key) == 0 || value == NULL)
 		return (0);
-	idx = key_index ((const unsigned char *)key, ht->size);
+	idx = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->array[idx];
 	while (tmp != NULL)
 	{
