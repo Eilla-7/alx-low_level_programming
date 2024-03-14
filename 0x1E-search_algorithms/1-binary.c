@@ -36,6 +36,5 @@ int binary_search(int *array, size_t size, int value)
 		else
 			high = mid - 1;
 	}
-	printf("Value %d not found in the array\n", value);
 	return (-1);
 }
